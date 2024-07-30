@@ -16,13 +16,23 @@ def home():
 
 # define the route to father webpage
 @app.route('/father')
+def father():
+    name = "Faisal"
+    age = "46"
+    return render_template('father.html' , name = name , age = age)
 
 # define the route to mother webpage
 @app.route('/mother')
-
+def mother():
+    name = "Hira"
+    age = "37"
+    return render_template('mother.html' , name = name , age = age)
 # define the route to friends webpage
 @app.route('/friend')
-
+def friend():
+    name = "Aarav"
+    age = "13"
+    return render_template('friend.html' , name = name , age = age)
 # add other routes, if you want
 
 
